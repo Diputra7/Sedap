@@ -1,0 +1,33 @@
+[
+    {
+      "kode_produk": "PRD001",
+      "nama_produk": "Nasi Goreng Spesial",
+      "harga": 25000,
+      "stok": 10
+    },
+    {
+      "kode_produk": "PRD002",
+      "nama_produk": "Ayam Bakar Madu",
+      "harga": 30000,
+      "stok": 0
+    },
+    {
+      "kode_produk": "PRD003",
+      "nama_produk": "Sate Ayam",
+      "harga": 22000,
+      "stok": 5
+    },
+    {
+      "kode_produk": "PRD004",
+      "nama_produk": "Es Teh Manis",
+      "harga": 5000,
+      "stok": 20
+    },
+    {
+      "kode_produk": "PRD005",
+      "nama_produk": "Mie Goreng Jawa",
+      "harga": 20000,
+      "stok": 0
+    }
+  ]
+  

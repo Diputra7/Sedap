@@ -8,6 +8,7 @@ import Product from "./components/guest/Product";
 import Testi from "./components/guest/Testi";
 import CekProduk from "./pages/guest/CekProduk";
 import About from "./components/guest/About";
+// import Products from "./pages/Products";
 
 // Lazy load layouts
 const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
@@ -22,6 +23,7 @@ const Login = React.lazy(() => import("./pages/auth/Login"));
 const Register = React.lazy(() => import("./pages/auth/Register"));
 const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
+const Products = React.lazy(() => import("./pages/Products"))
 
 function App() {
   return (
@@ -35,9 +37,9 @@ function App() {
               <>
                 <HeroSection />
                 <Info />
-                <About/>
-                <Product/>
-                <Testi/>
+                <About />
+                <Product />
+                <Testi />
               </>
             }
           />
@@ -49,6 +51,8 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
+          <Route path="/products" element={<Products />} />
+          
         </Route>
 
         {/* Auth layout routes */}

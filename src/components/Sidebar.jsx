@@ -1,6 +1,6 @@
 import { FaUserAlt } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { MdDashboard } from "react-icons/md";
+import { MdDashboard, MdFastfood } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 export default function Sidebar() {
   const menuClass = ({ isActive }) =>
@@ -53,6 +53,13 @@ export default function Sidebar() {
             <NavLink id="menu-3" to="/customers" className={menuClass}>
               <FaUserAlt className="mr-4 text-x1" />
               <span>Customers</span>
+            </NavLink>
+          </li>
+          <li>
+
+            <NavLink id="menu-4" to="/products" className={menuClass}>
+              <MdFastfood className="mr-4 text-xl" />
+              Products
             </NavLink>
           </li>
         </ul>

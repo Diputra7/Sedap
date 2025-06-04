@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import axios from "axios"
 
-export default function ProductDetail() {
+export default function ProductsDetail() {
     const { id } = useParams()
     const [product, setProduct] = useState(null)
     const [error, setError] = useState(null)
@@ -30,7 +30,7 @@ export default function ProductDetail() {
             <img
                 src={product.thumbnail}
                 alt={product.title}
-                className="rounded-xl mb-4 w-full h-48 object-cover"
+                className="rounded-xl mb-4 w-full object-cover"
             />
             <h2 className="text-2xl font-bold mb-2">{product.title}</h2>
             <p className="text-gray-600 mb-1">Kategori: {product.category}</p>

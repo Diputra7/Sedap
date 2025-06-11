@@ -8,6 +8,7 @@ import Product from "./components/guest/Product";
 import Testi from "./components/guest/Testi";
 import CekProduk from "./pages/guest/CekProduk";
 import About from "./components/guest/About";
+import Notes from "./pages/Notes";
 // import Products from "./pages/Products";
 
 // Lazy load layouts
@@ -54,7 +55,7 @@ function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/products" element={<Products />} />
               <Route path="/products/:id" element={<ProductsDetail />} /> 
-          
+            <Route path="/notes" element={<Notes />} />
         </Route>
 
         {/* Auth layout routes */}
